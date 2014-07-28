@@ -1,8 +1,10 @@
  # Data Managing file
 
 #Data_from_Excel <- read.xlsx("Data/Summary_Data.xlsx", sheetName="Summary_Data")
-Data_from_Excel <- read.xlsx("Data/Summary_Data-tdaedited-9.5.14.xlsx", sheetName="Summary_Data")
+#Data_from_Excel <- read.xlsx("Data/Summary_Data-tdaedited-9.5.14.xlsx", sheetName="Summary_Data")
+#Data_from_Excel <- read.xlsx("Data/Summary_Data-tdaedited-28.7.2014.xlsx", sheetName="Summary_Data")
 
+Data_from_Excel <- read.csv("Data/Summary_Data_28_07_2014.csv")
 DF_All <- Data_from_Excel
 
 DF_A01 <- Data_from_Excel[which(Data_from_Excel$A01==1),]

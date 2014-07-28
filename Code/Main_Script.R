@@ -18,9 +18,9 @@ model.a04 <- reitsma(DF_A04)
 model.a05 <- reitsma(DF_A05)
 model.a06 <- reitsma(DF_A06)
 model.a07 <- reitsma(DF_A07)
-#model.a08 <- reitsma(DF_A08)
-#model.a09 <- reitsma(DF_A09)
-model.a10 <- reitsma(DF_A10)
+model.a08 <- reitsma(DF_A08)
+model.a09 <- reitsma(DF_A09)
+#model.a10 <- reitsma(DF_A10)
 
 
 
@@ -29,13 +29,13 @@ model.a10 <- reitsma(DF_A10)
 Make_SROC(DF_A01, model.a01, "Outputs/Figures/SROC_A01.png", xlab_="False Positive Rate (1 - Specificity)")
 Make_SROC(DF_A02, model.a02, "Outputs/Figures/SROC_A02.png", xlab_="False Positive Rate (1 - Specificity)")
 Make_SROC(DF_A03, model.a03, "Outputs/Figures/SROC_A03.png", xlab_="False Positive Rate (1 - Specificity)")
-#Make_SROC(DF_A04, model.a04, "Outputs/Figures/SROC_A04.png", xlab_="False Positive Rate (1 - Specificity)")
-#Make_SROC(DF_A05, model.a05, "Outputs/Figures/SROC_A05.png", xlab_="False Positive Rate (1 - Specificity)")
+Make_SROC(DF_A04, model.a04, "Outputs/Figures/SROC_A04.png", xlab_="False Positive Rate (1 - Specificity)")
+Make_SROC(DF_A05, model.a05, "Outputs/Figures/SROC_A05.png", xlab_="False Positive Rate (1 - Specificity)")
 Make_SROC(DF_A06, model.a06, "Outputs/Figures/SROC_A06.png", xlab_="False Positive Rate (1 - Specificity)")
 Make_SROC(DF_A07, model.a07, "Outputs/Figures/SROC_A07.png", xlab_="False Positive Rate (1 - Specificity)")
-#Make_SROC(DF_A08, model.a08, "Outputs/Figures/SROC_A08.png")
-#Make_SROC(DF_A09, model.a09, "Outputs/Figures/SROC_A09.png")
-Make_SROC(DF_A10, model.a10, "Outputs/Figures/SROC_A10.png", xlab_="False Positive Rate (1 - Specificity)")
+Make_SROC(DF_A08, model.a08, "Outputs/Figures/SROC_A08.png", xlab_="False Positive Rate (1 - Specificity)")
+Make_SROC(DF_A09, model.a09, "Outputs/Figures/SROC_A09.png", xlab_="False Positive Rate (1 - Specificity)")
+#Make_SROC(DF_A10, model.a10, "Outputs/Figures/SROC_A10.png", xlab_="False Positive Rate (1 - Specificity)")
 
 
 # Diagnostics
@@ -46,12 +46,12 @@ diags.a01 <- madad(DF_A01)
 diags.a02 <- madad(DF_A02)
 diags.a03 <- madad(DF_A03)
 diags.a04 <- madad(DF_A04)
-#diags.a05 <- madad(DF_A05) # Computation unreliable
+diags.a05 <- madad(DF_A05) 
 diags.a06 <- madad(DF_A06)
 diags.a07 <- madad(DF_A07)
-#diags.a08 <- madad(DF_A08)
-# diags.a09 <- madad(DF_A09)
-diags.a10 <- madad(DF_A10)
+diags.a08 <- madad(DF_A08)
+diags.a09 <- madad(DF_A09)
+#diags.a10 <- madad(DF_A10)
 
 # 
 Model_Fit_DF <- data.frame(
@@ -59,82 +59,101 @@ Model_Fit_DF <- data.frame(
         1,
         2,
         3,
-#        4,
-#        5,
-#        6,
+        4,
+        5,
+        6,
         7,
-        10
+        8,
+        9
         ),
     X_Squared_Sensitivity=c(
         diags.a01$sens.htest$statistic,
         diags.a02$sens.htest$statistic,
         diags.a03$sens.htest$statistic,
-#        diags.a04$sens.htest$statistic,
-#        diags.a05$sens.htest$statistic,
-#        diags.a06$sens.htest$statistic,
+        diags.a04$sens.htest$statistic,
+        diags.a05$sens.htest$statistic,
+        diags.a06$sens.htest$statistic,
         diags.a07$sens.htest$statistic,
-        diags.a10$sens.htest$statistic
+        diags.a08$sens.htest$statistic,
+        diags.a09$sens.htest$statistic
+#        diags.a10$sens.htest$statistic
         ),
     I_Squared_Sensitivity=c(
         Calc_I2(diags.a01$sens.htest$statistic, diags.a01$sens.htest$parameter),
         Calc_I2(diags.a02$sens.htest$statistic, diags.a02$sens.htest$parameter),
         Calc_I2(diags.a03$sens.htest$statistic, diags.a03$sens.htest$parameter),
-#        Calc_I2(diags.a04$sens.htest$statistic, diags.a04$sens.htest$parameter),
-#        Calc_I2(diags.a05$sens.htest$statistic, diags.a05$sens.htest$parameter),
-#        Calc_I2(diags.a06$sens.htest$statistic, diags.a06$sens.htest$parameter),
+        Calc_I2(diags.a04$sens.htest$statistic, diags.a04$sens.htest$parameter),
+        Calc_I2(diags.a05$sens.htest$statistic, diags.a05$sens.htest$parameter),
+        Calc_I2(diags.a06$sens.htest$statistic, diags.a06$sens.htest$parameter),
         Calc_I2(diags.a07$sens.htest$statistic, diags.a07$sens.htest$parameter),
-        Calc_I2(diags.a10$sens.htest$statistic, diags.a10$sens.htest$parameter)
+        Calc_I2(diags.a08$sens.htest$statistic, diags.a08$sens.htest$parameter),
+        Calc_I2(diags.a09$sens.htest$statistic, diags.a09$sens.htest$parameter)
+        
+#        Calc_I2(diags.a10$sens.htest$statistic, diags.a10$sens.htest$parameter)
         
         ),
     p_value_Sensitivity=c(
         diags.a01$sens.htest$p.value,
         diags.a02$sens.htest$p.value,
         diags.a03$sens.htest$p.value,
-#        diags.a04$sens.htest$p.value,
-#        diags.a05$sens.htest$p.value,
-#        diags.a06$sens.htest$p.value,
-        diags.a07$sens.htest$p.value,        
-        diags.a10$sens.htest$p.value
+        diags.a04$sens.htest$p.value,
+        diags.a05$sens.htest$p.value,
+        diags.a06$sens.htest$p.value,
+        diags.a07$sens.htest$p.value,
+        diags.a08$sens.htest$p.value,
+        diags.a09$sens.htest$p.value
+#        diags.a10$sens.htest$p.value
         ),
     X_Squared_Specificity=c(
         diags.a01$spec.htest$statistic,
         diags.a02$spec.htest$statistic,
         diags.a03$spec.htest$statistic,
-#        diags.a04$spec.htest$statistic,
-#        diags.a05$spec.htest$statistic,
-#        diags.a06$spec.htest$statistic,
+        diags.a04$spec.htest$statistic,
+        diags.a05$spec.htest$statistic,
+        diags.a06$spec.htest$statistic,
         diags.a07$spec.htest$statistic,
-        diags.a10$spec.htest$statistic
+        diags.a08$spec.htest$statistic,
+        diags.a09$spec.htest$statistic
+        
+#        diags.a10$spec.htest$statistic
         ),
     I_Squared_Specificity=c(
         Calc_I2(diags.a01$spec.htest$statistic, diags.a01$spec.htest$parameter),
         Calc_I2(diags.a02$spec.htest$statistic, diags.a02$spec.htest$parameter),
         Calc_I2(diags.a03$spec.htest$statistic, diags.a03$spec.htest$parameter),
-#        Calc_I2(diags.a04$spec.htest$statistic, diags.a04$spec.htest$parameter),
-#        Calc_I2(diags.a05$spec.htest$statistic, diags.a05$spec.htest$parameter),
-#        Calc_I2(diags.a06$spec.htest$statistic, diags.a06$spec.htest$parameter),
+        Calc_I2(diags.a04$spec.htest$statistic, diags.a04$spec.htest$parameter),
+        Calc_I2(diags.a05$spec.htest$statistic, diags.a05$spec.htest$parameter),
+        Calc_I2(diags.a06$spec.htest$statistic, diags.a06$spec.htest$parameter),
         Calc_I2(diags.a07$spec.htest$statistic, diags.a07$spec.htest$parameter),
-        Calc_I2(diags.a10$spec.htest$statistic, diags.a10$spec.htest$parameter)
+        Calc_I2(diags.a08$spec.htest$statistic, diags.a08$spec.htest$parameter),
+        Calc_I2(diags.a09$spec.htest$statistic, diags.a09$spec.htest$parameter)        
+#        Calc_I2(diags.a10$spec.htest$statistic, diags.a10$spec.htest$parameter)
     ),
     p_value_Specificity=c(
         diags.a01$spec.htest$p.value,
         diags.a02$spec.htest$p.value,
         diags.a03$spec.htest$p.value,
-#        diags.a04$spec.htest$p.value,
- #       diags.a05$spec.htest$p.value,
-#        diags.a06$spec.htest$p.value,
+        diags.a04$spec.htest$p.value,
+        diags.a05$spec.htest$p.value,
+        diags.a06$spec.htest$p.value,
         diags.a07$spec.htest$p.value,
-        diags.a10$spec.htest$p.value
+        diags.a08$spec.htest$p.value,
+        diags.a09$spec.htest$p.value
+        
+#        diags.a10$spec.htest$p.value
     ),
     AUC=c(
         summary(model.a01)$AUC$AUC,
         summary(model.a02)$AUC$AUC,
         summary(model.a03)$AUC$AUC,
-#        summary(model.a04)$AUC$AUC,
-#        summary(model.a05)$AUC$AUC,
-#        summary(model.a06)$AUC$AUC,
-        summary(model.a07)$AUC$AUC,        
-        summary(model.a10)$AUC$AUC
+        summary(model.a04)$AUC$AUC,
+        summary(model.a05)$AUC$AUC,
+        summary(model.a06)$AUC$AUC,
+        summary(model.a07)$AUC$AUC,
+        summary(model.a08)$AUC$AUC,        
+        summary(model.a09)$AUC$AUC        
+        
+#        summary(model.a10)$AUC$AUC
         )
 )
 
@@ -224,10 +243,10 @@ BivarForest(
     model=model.a09
 )
 
-BivarForest(
-    DF=DF_A10,
-    diags=diags.a10,
-    model=model.a10
-)
+# BivarForest(
+#     DF=DF_A10,
+#     diags=diags.a10,
+#     model=model.a10
+# )
 
 
