@@ -1,0 +1,68 @@
+Study_ID,tp,tn,fp,fn,disease,healthy,sens,spec,indexTest,referenceStandard,latentClass,pLatentClass1,pLatentClass2
+Standley-2010,105,9,38,1,106,47,0.991,0.191,POC-CCA cassette,Kato-Katz,2,0.03,0.97
+Standley-2010,105,9,38,1,106,47,0.991,0.191,POC-CCA reagent strips,Kato-Katz,2,0.03,0.97
+Standley-2010,105,9,38,1,106,47,0.991,0.191,POC-CCA cassette,Kato-Katz,2,0.03,0.97
+Adriko-2014,114,176,199,11,125,375,0.912,0.469,POC-CCA cassette,Kato-Katz,2,0.02,0.98
+Adriko-2014,114,176,119,11,125,295,0.912,0.597,POC-CCA cassette,Kato-Katz (one stool),2,0.02,0.98
+Adriko-2014,114,176,199,11,125,375,0.912,0.469,POC-CCA cassette,Kato-Katz,2,0.02,0.98
+Sousa-Figueiredo-2013,117,257,179,39,156,436,0.75,0.589,POC-CCA cassette,Kato-Katz,2,0.00,1.00
+Legesse-2007,130,41,59,21,151,100,0.861,0.41,POC-CCA cassette (one urine),Kato-Katz (one stool plus formol ether concetration),2,0.04,0.96
+Legesse-2007,130,41,59,21,151,100,0.861,0.41,POC-CCA reagent strips,Kato-Katz,2,0.04,0.96
+Sousa-Figueiredo-2013,133,429,316,37,170,745,0.782,0.576,POC-CCA cassette,Kato-Katz,2,0.00,1.00
+Sousa-Figueiredo-2013,133,429,316,47,180,745,0.739,0.576,POC-CCA cassette,Kato-Katz,2,0.00,1.00
+Tchuem-Tchuente-2012-study3,136,50,37,19,155,87,0.877,0.575,POC-CCA cassette,Kato-Katz,2,0.35,0.65
+Tchuem-Tchuente-2012-study3,136,50,37,19,155,87,0.877,0.575,POC-CCA cassette (one urine),Kato-Katz (three stools),2,0.35,0.65
+Koukounari-2013,136,50,37,19,155,87,0.877,0.575,POC-CCA,Kato-Katz (More than one Stool),2,0.35,0.65
+Coulibaly-2011-study3,138,10,3,13,151,13,0.914,0.769,POC-CCA cassette (three urine),Kato-Katz (three stools),1,0.62,0.38
+Coulibaly-2011-study3,138,11,2,16,154,13,0.896,0.846,POC-CCA cassette,Kato-Katz,1,0.77,0.23
+Coulibaly-2011-study3,138,11,2,16,154,13,0.896,0.846,POC-CCA cassette (one urine),Kato-Katz (three stools),1,0.77,0.23
+Tchuem-Tchuente-2012-study2,145,43,26,31,176,69,0.824,0.623,POC-CCA cassette,Kato-Katz,2,0.19,0.81
+Tchuem-Tchuente-2012-study2,145,43,26,31,176,69,0.824,0.623,POC-CCA cassette (one urine),Kato-Katz (three stools),2,0.19,0.81
+Koukounari-2013-study1,148,2,2,17,165,4,0.897,0.5,POC-CCA cassette (one urine),Kato-Katz (three stools),2,0.27,0.73
+Koukounari-2013-study1,148,2,2,17,165,4,0.897,0.5,POC-CCA cassette,Kato-Katz,2,0.27,0.73
+Tchuem-Tchuente-2012-study3,149,27,60,6,155,87,0.961,0.31,POC-CCA cassette (three urine),Kato-Katz (three stools),2,0.07,0.93
+Coulibaly-2013,149,27,60,6,155,87,0.961,0.31,POC-CCA,Kato-Katz (More than one Stool),2,0.07,0.93
+Adriko-2014,155,153,140,21,176,293,0.881,0.522,POC-CCA cassette,Kato-Katz,2,0.39,0.61
+Sousa-Figueiredo-2013-study1,16,172,137,8,24,309,0.667,0.557,POC-CCA cassette,Kato-Katz,2,0.06,0.94
+Sousa-Figueiredo-2013,16,172,137,8,24,309,0.667,0.557,POC-CCA cassette,Kato-Katz,2,0.06,0.94
+Tchuem-Tchuente-2012-study2,160,24,45,16,176,69,0.909,0.348,POC-CCA cassette (three urine),Kato-Katz (three stools),2,0.06,0.94
+Coulibaly-2011,186,67,7,37,223,74,0.834,0.905,POC-CCA cassette,Kato-Katz,1,0.90,0.10
+Koukounari-2013-study2,189,37,7,41,230,44,0.822,0.841,POC-CCA cassette (one urine),Kato-Katz (three stools),1,0.80,0.20
+Koukounari-2013-study2,189,37,7,41,230,44,0.822,0.841,POC-CCA cassette,Kato-Katz,1,0.80,0.20
+Coulibaly-2011,230,249,42,38,268,291,0.858,0.856,POC-CCA cassette,"Kato-Katz (one stool, duplicate 41.7 mg)",1,0.96,0.04
+Coulibaly-2011,230,249,42,38,268,291,0.858,0.856,POC-CCA cassette,Kato-Katz (one stool),1,0.96,0.04
+Shane-2011,231,833,664,35,266,1497,0.868,0.556,POC-CCA cassette (one urine),Kato-Katz (one stool),1,1.00,0.00
+Shane-2011,231,833,664,35,266,1497,0.868,0.556,POC-CCA reagent strips,Kato-Katz,1,1.00,0.00
+Tchuem-Tchuente-2012,247,231,208,27,274,439,0.901,0.526,POC-CCA cassette (one urine),Kato-Katz (one stool),2,0.15,0.85
+Erko-2013,251,195,158,16,267,353,0.94,0.552,POC-CCA cassette,Kato-Katz (one stool),2,0.19,0.81
+Coulibaly-2011-study1,27,92,6,21,48,98,0.563,0.939,POC-CCA cassette (one urine),Kato-Katz (three stools),1,0.93,0.07
+Coulibaly-2011-study1,27,92,6,21,48,98,0.563,0.939,POC-CCA cassette,Kato-Katz,1,0.93,0.07
+Coulibaly-2011,27,92,6,21,48,98,0.563,0.939,POC-CCA cassette,Kato-Katz,1,0.93,0.07
+Tchuem-Tchuente-2012,281,93,63,50,331,156,0.849,0.596,POC-CCA cassette,Kato-Katz,2,0.10,0.90
+Coulibaly-2011-study1,32,80,17,16,48,97,0.667,0.825,POC-CCA cassette (three urine),Kato-Katz (three stools),1,0.69,0.31
+Tchuem-Tchuente-2012,322,150,94,59,381,244,0.845,0.615,POC-CCA cassette (one urine),Kato-Katz (three stools),2,0.02,0.98
+Dawson-2013,37,22,14,7,44,36,0.841,0.611,POC-CCA cassette,Kato-Katz,2,0.30,0.70
+Dawson-2013,37,22,14,7,44,36,0.841,0.611,POC-CCA cassette (one urine),Kato-Katz (two stools),2,0.30,0.70
+Tchuem-Tchuente-2012-study1,41,57,31,9,50,88,0.82,0.648,POC-CCA cassette (one urine),Kato-Katz (three stools),2,0.31,0.69
+Coulibaly-2013,41,57,31,9,50,88,0.82,0.648,POC-CCA,Kato-Katz (More than one Stool),2,0.31,0.69
+Tchuem-Tchuente-2012-study1,41,57,31,9,50,88,0.82,0.648,POC-CCA cassette,Kato-Katz,2,0.31,0.69
+Tchuem-Tchuente-2012,41,57,31,9,50,88,0.82,0.648,POC-CCA cassette,Kato-Katz,2,0.31,0.69
+Coulibaly-2013,43,146,40,13,56,186,0.768,0.785,Single POC-CCA,Kato-Katz (More than one Stool),1,0.67,0.33
+Coulibaly-2013,43,146,40,13,56,186,0.768,0.785,POC-CCA cassette,Kato-Katz,1,0.67,0.33
+Sousa-Figueiredo-2013-study2,46,173,107,11,57,280,0.807,0.618,POC-CCA cassette,Kato-Katz,2,0.06,0.94
+Tchuem-Tchuente-2012-study1,46,48,40,4,50,88,0.92,0.545,POC-CCA cassette (three urine),Kato-Katz (three stools),2,0.30,0.70
+Coulibaly-2011-study2,48,56,5,21,69,61,0.696,0.918,POC-CCA cassette (one urine),Kato-Katz (three stools),1,0.92,0.08
+Coulibaly-2011-study2,48,56,5,21,69,61,0.696,0.918,POC-CCA cassette,Kato-Katz,1,0.92,0.08
+Adriko-2014,5,77,15,3,8,92,0.625,0.837,POC-CCA cassette,Kato-Katz,1,0.78,0.22
+Coulibaly-2011-study2,51,48,9,15,66,57,0.773,0.842,POC-CCA cassette (three urine),Kato-Katz (three stools),1,0.80,0.20
+Coulibaly-2013,52,82,104,4,56,186,0.929,0.441,POC-CCA cassette (one urine),Kato-Katz (three stools),2,0.17,0.83
+Coulibaly-2013,52,82,104,4,56,186,0.929,0.441,POC-CCA cassette,Kato-Katz,2,0.17,0.83
+Coulibaly-2013,52,82,104,4,56,186,0.929,0.441,POC-CCA cassette,Kato-Katz,2,0.17,0.83
+Coulibaly-2013,53,54,132,3,56,186,0.946,0.29,POC-CCA cassette (two urine),Kato-Katz (two stools),2,0.04,0.96
+Legesse-2008,60,46,60,18,78,106,0.769,0.434,POC-CCA reagent strips,Kato-Katz (one stool plus formol ether concetration),2,0.06,0.94
+Legesse-2008,60,46,60,18,78,106,0.769,0.434,POC-CCA reagent strips,Kato-Katz,2,0.06,0.94
+Sousa-Figueiredo-2013-study3,71,84,72,28,99,156,0.717,0.538,POC-CCA cassette,Kato-Katz,2,0.03,0.97
+Adriko-2014,90,223,60,27,117,283,0.769,0.788,POC-CCA cassette,Kato-Katz,1,0.82,0.18
+Standley-2010,93,32,15,13,106,47,0.877,0.681,POC-CCA cassette,Kato-Katz,2,0.50,0.50
+Adriko-2014,95,300,75,30,125,375,0.76,0.8,POC-CCA cassette,Kato-Katz,1,0.96,0.04
+Sousa-Figueiredo-2013,95,638,107,85,180,745,0.528,0.856,POC-CCA cassette,Kato-Katz,1,0.99,0.01
