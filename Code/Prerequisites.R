@@ -120,17 +120,21 @@ Make_SROC <- function(
     DF,
     model,
     filename,
-    width_=600,
-    height_=600,
+    width_=15,
+    height_=15,
     xlab_="False Positive Rate",
-    ylab_="Sensitivity"
+    ylab_="Sensitivity",
+    units_ = "cm",
+    res_ = 300
     ){
     
     #Create graphics device connection
     png(
         filename,
         width=width_,
-        height=height_
+        height=height_,
+        units = units_,
+        res = res_
         )
     
     # Plot SROC with extrapolation (dashed line)
@@ -191,17 +195,21 @@ Make_SROC.old <- function(
     DF,
     model,
     filename,
-    width_=600,
-    height_=600,
+    width_=15,
+    height_=15,
     xlab_="False Positive Rate",
-    ylab_="Sensitivity"
+    ylab_="Sensitivity",
+    res_ = 300,
+    units_ = "cm"
 ){
     
     #Create graphics device connection
     png(
         filename,
         width=width_,
-        height=height_
+        height=height_,
+        res = res_,
+        units = units_
     )
     
     # Plot SROC with extrapolation (dashed line)
