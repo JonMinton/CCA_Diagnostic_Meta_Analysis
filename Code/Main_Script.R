@@ -22,6 +22,44 @@ model.a08 <- reitsma(DF_A08)
 model.a09 <- reitsma(DF_A09)
 #model.a10 <- reitsma(DF_A10)
 
+# quickish sensitivity analysis: leave one out method
+
+# for each analyses, re-run the model with one observation missing, extract the AUC, and 
+# compare with the actual AUC
+
+leave_one_out <- function(DF_OVERALL){
+    
+    out <- data.frame(
+        Study_ID = DF_OVERALL$Study_ID, 
+        local_AUC = NA,
+        global_AUC = AUC(reitsma(DF_OVERALL))$AUC
+    )
+    
+    N <- nrow(DF_OVERALL)
+    
+    for (i in 1:N){
+        df_tmp <- DF_OVERALL[-i,]
+        out[i,2] <- AUC(reitsma(df_tmp))$AUC
+    }
+    
+    out$dif_AUC = out$local_AUC - out$global_AUC
+    
+    out[,-1] <- round(out[,-1], 3)
+    return(out)
+}
+
+lever_A01 <- leave_one_out(DF_A01)
+lever_A02 <- leave_one_out(DF_A02)
+lever_A03 <- leave_one_out(DF_A03)
+lever_A04 <- leave_one_out(DF_A04)
+lever_A05 <- leave_one_out(DF_A05)
+lever_A06 <- leave_one_out(DF_A06)
+lever_A07 <- leave_one_out(DF_A07)
+lever_A08 <- leave_one_out(DF_A08)
+lever_A09 <- leave_one_out(DF_A09)
+
+
+
 
 
 # SROC plots
